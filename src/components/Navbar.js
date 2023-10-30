@@ -86,8 +86,12 @@ const handleClose2 = () => {
     <nav className="Navbar">
       <h1>CyberSec</h1>
      {!loginToken? <div className='buttonContainer'>
-      <div className='button'>Login</div>
-      <div className='button'>Join</div>
+      <div className='button' onClick={() => {
+                window.location.href = '/Login';
+              }}>Login</div>
+      <div className='button' onClick={() => {
+                window.location.href = '/Join';
+              }}>Join</div>
       </div>:
       <React.Fragment>
          <div className='sm-menu'>
