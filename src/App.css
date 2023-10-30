@@ -1,0 +1,751 @@
+/* App.css */
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  font-family: 'Glacial Indifference', sans-serif;
+                                             
+  background-color: #111927;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar.css */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+
+  color: white;
+}
+.Navbar .pagesContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+
+  gap: 35px;
+}
+.Navbar .pagesContainer div{
+  cursor: pointer;
+}
+
+.Navbar .button {
+  /* Green */
+ 
+ 
+  padding: 5px 20px;
+
+
+}
+.Navbar .sm-menu{
+  display: none;
+}
+.button{
+  font-weight: 900;
+  border: 2px solid #fff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover{
+  color: #111927;
+  background-color: #fff;
+}
+/* Home.css */
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0;
+  height: 100%;
+}
+
+.Home h2 {
+  color: #79d2db;
+  max-width: 1200px;
+
+  font-size: 70px;
+  font-family: 'VT323', monospace;
+}
+
+.Home .button {
+
+  padding: 15px 30px;
+
+}
+
+.Home p {
+  font-size: 24px;
+  max-width: 900px;
+  color: #fff;
+  margin: 50px 0;
+}
+.Navbar .buttonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.InfoCard{
+  text-align: left;
+  font-size: 20px;
+  width: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #79d2db;
+  justify-content: left;
+  
+}
+.InfoCard p{
+  margin: 20px 0;
+}
+.InfoCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ gap: 200px;
+ width: 100vw;
+  margin-top: 250px;
+}
+.InfoCard .logo{
+  width: 75px;
+  height: 75px;
+}
+.InfoCard .logo img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.InfoCard .image{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.InfoCard .image img{
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+.Navbar .fa{
+  font-size: 30px;
+  cursor: pointer;
+}
+.menuDiv .MuiPaper-root{
+  width: 150px !important;
+  background-color: #111927!important;
+  color: #fff!important;
+}
+.playerModal .MuiPaper-root{
+  max-width: fit-content!important;
+}
+.XpBar{
+
+  width: 100%;
+}
+.XpBar section{
+  font-family: 'VT323', monospace;
+ 
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.XpBar .btnDiv{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.XpBar .btnDiv .button{
+  padding: 5px 10px;
+}
+.XpBar .score{
+font-size: 24px;
+}
+.HomeContent{
+  padding: 10px 20vw;
+}
+.LevelCard{
+  cursor: pointer;
+  background-color: #21224e;
+  
+  width: 100%;
+
+margin-top: 10px;
+}
+.LevelCard section{
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+ 
+}
+.LevelCard .levelHeader{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.LevelCard .levelHeader .title{
+  font-size: 24px;
+}
+.LevelCard .levelHeader .note{
+  font-size: 14px;
+}
+.unlocked{
+  display: flex;
+  
+  height: 100px;
+  background-color: #545454;
+  color: #d9d9d9;
+  justify-content: center;
+
+}
+.unlocked div{
+  margin: 0 10px;
+  display: flex;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+}
+.levelContent{
+  overflow-y: scroll;
+ 
+  height: 70vh !important;
+
+  width: 100%;
+  background-color: #141d2b;
+}
+.levelContent section{
+  margin: 10px;
+}
+.levelContainer{
+  display: flex;
+  flex-direction: column;
+}
+.Content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Content .contentComponent{
+  width: 100%;
+}
+
+.Content .contentComponent section{
+  display: flex;
+
+  gap: 20px;
+ 
+  margin: 20px 0;
+ 
+}
+.Content .contentIndicator{
+  height: 20px;
+  width: 20px;
+  border: 2px solid #79d2db;
+  border-radius: 50%;
+}
+.Content .contentCard{
+ 
+  text-align: left;
+  background-color: #1a2332;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.Content .contentCard .title{
+  font-size: 21px;
+  font-weight: 900;
+}
+.Content .contentCard .paragraph{
+  font-size: 18px;
+}
+.Content .contentCard .button{
+  background-color: #79d2db;
+  color: #1a2332;
+  border: none;
+  padding: 5px 10px;
+  width: fit-content;
+}
+.Content .contentCard .button:hover{
+  background-color: transparent;
+  border: 1px solid #79d2db;
+  color: #79d2db;
+}
+.Content .contentCard .buttonContainer,.Content .contentCard .questionContainer{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Content .contentCard input{
+  color: #fff;
+  width: 80px;
+ min-width: auto;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+
+}
+.quest .MuiPaper-root,.leaderBoard .MuiPaper-root{
+  background-color: #111927;
+  color: #fff!important;
+}
+.leaderBoard .MuiTableCell-root{
+  color: #fff!important;
+}
+.Content .MuiPaper-root{
+  width: auto!important;
+}
+.Events{
+  width: 100%;
+ 
+
+}
+.Events .eventsHeader{
+ 
+  width: 100%;
+ 
+}
+.Events .eventsHeader section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 10vw;
+}
+
+.Events .eventsHeader .filter .filterButtons{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+
+}
+.Events .eventsHeader .filter .filterButtons div{
+  max-width: fit-content;
+  cursor: pointer;
+  padding: 5px 10px;
+ border: 2px solid #fff;
+ border-radius: 8px;
+ color: #fff;
+}
+.Events .eventsHeader .filter .filterLabel{
+  display: flex;
+  align-items: center;
+  gap:15px;
+
+}
+.Events .eventsHeader .filter .filterLabel div{
+  
+  width: 25px;
+  height: 30px;
+}
+.Events .eventsHeader .filter .filterLabel img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.Events .eventsHeader .filter .filterLabel span{
+  font-size: 20px;
+}
+.Events .eventsHeader .title img{
+  width: 125px;
+  height: 125px;
+  border: none;
+}
+.Events .eventsHeader .title span{
+  font-size: 20px;
+}
+.Events .eventsBody{
+  width: 100%;
+  height: auto;
+  min-height: 67.5vh;
+  background-color: #141d2b;
+}
+.Events .eventsBody section{
+  margin: 0 20vw;
+  padding-top: 10px;
+}
+.EventComponent{
+  width:100%;
+  background-color: #1a2332;
+  margin: 10px 0;
+}
+.EventComponent section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px !important;
+  padding: 10px;
+}
+.EventComponent img{
+  width: auto;
+  max-width: 50%;
+  object-fit: contain;
+  height: 175px;
+}
+.EventComponent .eventInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+ gap: 5px;
+  text-align: left;
+  height: 175px;
+}
+.EventComponent .eventInfo span{
+  color: #fff;
+  font-size: 17.5px;
+}
+.EventComponent .eventInfo .title{
+  font-size: 25px;
+}
+.team section{
+  margin: 0 10vw;
+}
+
+.team .team-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+}
+
+.team .team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.team .team-member-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.team .team-member-name {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.team .team-member-job-title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.team .team-member-description {
+  font-size: 18px;
+}
+.Join{
+
+  height: 100vh;
+  width: 100%;
+
+}
+.Join>section{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.Join .title{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.Join .Footer{
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.Join .window{
+
+
+  width: 400px;
+  height: 400px;
+  background-image: url("assets/images/login.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Join .window section{
+  font-family: 'VT323',monospace;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 45px 20px;
+
+}
+.Join .window input{
+  
+  font-family: 'VT323',monospace;
+  font-size: 20px;
+  padding: 10px 5px;
+  width: 300px;
+  background-color: #111927;
+  color: #fff;
+  border: 2px dashed #fff;}
+  .Join .window section div{
+    cursor: pointer;
+    margin-left: auto; 
+    margin-right: 0;
+    width: 120px;
+    height: 56px;
+    background-image: url("assets/images/button.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  .Join .window section div:hover{
+    width: 125px;
+    height: 60px;
+  }
+  .Join .window section span{
+    margin-left: 0; 
+    margin-right: auto;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+@media screen and (max-width:1600px) {
+  .EventComponent .eventInfo span{
+    color: #fff;
+    font-size: 16px;
+  }
+  .EventComponent .eventInfo .title{
+    font-size: 22.5px;
+  }
+  .Events .eventsBody section{
+    margin: 0 15vw;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width:1300px) {
+  .EventComponent .eventInfo span{
+    color: #fff;
+    font-size: 14px;
+  }
+  .EventComponent .eventInfo .title{
+    font-size: 20px;
+  }
+  .HomeContent{
+    padding: 10px 15vw;
+  }
+  .InfoCardContainer{
+    gap: 100px;
+  }
+
+
+}
+@media screen and (max-width:1080px) {
+  .team section{
+    margin: 0 5vw;
+  }
+  .Events .eventsBody section{
+    margin: 0 10vw;
+    padding-top: 10px;
+  }
+  .HomeContent{
+    padding: 10px 12.5vw;
+  }
+  .InfoCard{
+  
+ 
+    width: 380px;
+
+    
+  }
+  .InfoCardContainer{
+    gap: 75px;
+  }
+  .InfoCard p{
+    font-size: 20px !important;
+
+  }
+
+}
+@media screen and (max-width:950px) {
+  .team section{
+    margin: 0 10px;
+  }
+  .team .team-grid {
+  
+    grid-template-columns: repeat(2,1fr);
+   
+  }
+  .EventComponent img{
+
+    max-width: 40%;
+    object-fit: cover;
+   
+  }
+
+  .HomeContent{
+    padding: 10px 10vw;
+  }
+  .Navbar .sm-menu{
+    display: contents !important;;
+  }
+  .Navbar .bg-menu{
+    display: none;
+  }
+  .Home{
+    padding: 100px 0;
+  }
+  .Home p{
+    max-width: 650px;
+  }
+  .InfoCardContainer {
+    flex-direction: column;
+  }
+  .Events .eventsHeader .title img {
+    width: 90px;
+    height: 90px;
+   
+  }
+  .Events .eventsHeader .filter section {
+   align-items: first baseline;
+  }
+  .Events .eventsHeader .filter .filterButtons {
+    font-size: 16px;
+    gap: 10px;
+
+  }
+  .Events .eventsBody section{
+    margin: 15px;
+    padding-top: 10px;
+  }
+  .Events .eventsHeader section{
+    margin: 15px;
+  }
+  .Events .eventsHeader .title span {
+    font-size: 18px;
+  }
+
+}
+@media screen and (max-width:600px) {
+  .team .team-grid {
+  
+    grid-template-columns: repeat(1,1fr);
+    
+  }
+  .Events .eventsHeader .title img {
+    width: 75px;
+    height: 75px;
+   
+  }
+  .Events .eventsHeader .filter section {
+   align-items: first baseline;
+  }
+  .Events .eventsHeader .filter .filterButtons {
+    font-size: 14px;
+    gap: 5px;
+
+  }
+  .Events .eventsHeader section{
+    margin: 10px;
+  }
+  .Events .eventsBody section{
+    margin: 10px;
+   
+  }
+  .Events .eventsHeader .title span {
+    font-size: 16px;
+  }
+  .levelContent section{
+    margin: 0 5px;
+  }
+  .unlocked{
+    height: 80px;
+  }
+  .Content .contentComponent section{
+ 
+   gap: 5px;
+    margin: 20px 0;
+   
+  }
+  .Content .contentCard{
+    padding: 10px;
+  }
+  .LevelCard .levelHeader .title {
+    font-size: 20px;
+  }
+  .Content .contentCard .paragraph {
+    font-size: 14px;
+  }
+  .Content .button{
+    font-size: 12px;
+  }
+  .HomeContent {
+    padding: 10px;
+  }
+  .Navbar{
+    padding: 10px;
+  }
+  .InfoCardContainer {
+    padding: 0 20px;
+  }
+  .InfoCard{
+    width: 75%;
+  }
+  .Home{
+    padding: 50px 0;
+  }
+  .Home p{
+    max-width: 400px;
+  }
+  
+}
+@media screen and (max-width:500px) {
+  .Home p{
+    max-width: 100%;
+  }
+}
+@media screen and (max-width:400px) {
+  .Join>section{
+    margin: 0 20px;
+  }
+  .Join .window section div{
+    width: 85px;
+  height: 40px;
+  }
+  .Join .window{
+    width: 120px;
+  
+
+
+    width: 92.5vw;
+    height: 92.5vw;
+  
+  }
+  .Join .window section{
+    gap: 15px;
+  }
+  .Join .window input {
+    width: 62.5vw;
+    padding: 5px;
+  }
+  .Join .window section span {
+    font-size: 20px;
+  }
+  
+}

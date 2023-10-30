@@ -1,0 +1,46 @@
+   <svg id="Matrix" xmlns="http://www.w3.org/2000/svg">
+      <script type="application/ecmascript">
+        <![CDATA[
+        const svg = document.getElementById("Matrix");
+        svg.setAttribute("width", window.innerWidth);
+        svg.setAttribute("height", window.innerHeight);
+
+        const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        const fontSize = 16;
+        const columns = window.innerWidth / fontSize;
+        const rainDrops = [];
+
+        for (let x = 0; x < columns; x++) {
+          rainDrops[x] = 1;
+        }
+
+        const draw = () => {
+          svg.innerHTML = "";
+
+          for (let i = 0; i < rainDrops.length; i++) {
+            const text = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "text"
+            );
+            text.setAttribute("x", i * fontSize);
+            text.setAttribute("y", rainDrops[i] * fontSize);
+            text.setAttribute("font-size", fontSize);
+            text.setAttribute("fill", "rgba(58, 46, 196, 0.4)");
+            text.textContent =
+              alphabet[Math.floor(Math.random() * alphabet.length)];
+
+            svg.appendChild(text);
+
+            if (
+              rainDrops[i] * fontSize > window.innerHeight &&
+              Math.random() > 0.975
+            ) {
+              rainDrops[i] = 0;
+            }
+            rainDrops[i]++;
+          }
+        };
+
+        setInterval(draw, 30);
+      ]]> </script>
+    </svg>
