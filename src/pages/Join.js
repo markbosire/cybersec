@@ -49,7 +49,7 @@ const Join = () => {
       setMessage('Sign up successful proceed to sign in!');
       setOpen(true);
     setTimeout(() => {
-      //window.location.href = '/Home';
+      window.location.href = '/';
     }, 1500);
   };
 
