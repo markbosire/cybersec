@@ -57,6 +57,7 @@ const handleClose2 = () => {
                     window.location.href = '/Team';
                 }}>Team</MenuItem>
      <MenuItem onClick={()=>{
+                     window.location.href = '/';
                    localStorage.removeItem("user")
                 }}>logout</MenuItem>
     </Menu> 
@@ -80,6 +81,7 @@ const handleClose2 = () => {
     >
       <MenuItem >{loginToken.loginToken}</MenuItem>
      <MenuItem onClick={()=>{
+                     window.location.href = '/';
                     localStorage.removeItem('user')
                 }}>Logout</MenuItem>
     </Menu> 
