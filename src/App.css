@@ -61,11 +61,14 @@ body{
 }
 /* Home.css */
 .Home {
+ width: 100%;
+  height: 100%;
+}
+.Home section{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 0;
-  height: 100%;
+  margin: 200px 10px;
 }
 
 .Home h2 {
@@ -608,8 +611,8 @@ margin-top: 10px;
   .Navbar .bg-menu{
     display: none;
   }
-  .Home{
-    padding: 100px 0;
+  .Home section{
+    margin-top: 100px;
   }
   .Home p{
     max-width: 650px;
@@ -707,17 +710,24 @@ margin-top: 10px;
   .InfoCard{
     width: 75%;
   }
-  .Home{
-    padding: 50px 0;
+  .Home section{
+    margin-top: 50px;
   }
-  .Home p{
+  
+  .Home p,.Home h2{
     max-width: 400px;
   }
   
 }
 @media screen and (max-width:500px) {
-  .Home p{
+  .Home h2{
+    font-size: 50px;
+  }
+  .Home p,.Home h2{
     max-width: 100%;
+  }
+  .Home p{
+    font-size: 20px;
   }
 }
 @media screen and (max-width:400px) {
